@@ -1,4 +1,6 @@
 html {
+    font-family: "Oswald", sans-serif;
+    font-size: 62.5%;
 }
 
 body {
@@ -17,37 +19,43 @@ body {
     --gray: #faf9f8;
 }
 
+/* ---------- NAVBAR ---------- */
+
 .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
     background-color: var(--black);
-    padding: 24px;
 }
 
 .navbar__a {
-    margin: 0 2vw;
+    font-size: 2rem;
+    margin: 4rem 2vw;
+    width: 15%;
     text-decoration: none;
     text-align: center;
     color: var(--light-cofee);
 }
 
-
 .navbar_ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 85%;
 }
 
 .navbar_ul_li {
+    display: flex;
+    align-items: center;
     list-style: none;
     text-align: center;
     margin: 0 20px;
 }
 
 .navbar_ul_li__a {
-    font-size: 14px;
+    font-size: 1.4rem;
     text-decoration: none;
     color: var(--light-cofee);
     transition: all .4s;
@@ -56,3 +64,6 @@ body {
 .navbar_ul_li__a:hover {
     color: var(--ligh-beige);
 }
+
+/* ---------- FOOTER ---------- */
+

@@ -286,17 +286,25 @@ footer {
 }
 
 .tutorial {
+    position: relative;
     width: 45%;
 }
 
-.tutorial figure {
+.tutorial-figure {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
-.tutorial figure img {
+.tutorial-figure__img {
     width: 100%;
     height: 100%;
+    transition: all .6s;
+}
+
+.tutorial-figure__img:hover {
+    transform: scale(1.2);
+    filter: brightness(.5);
 }
 
 .espresso-tutorial {
@@ -304,11 +312,27 @@ footer {
 }
 
 .h2-a-tutorial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.h2-a-tutorial-container h2 {
+    font-size: 2.8rem;
+    color: var(--gray);
+    text-shadow: 1px 1px 1px var(--black);
+}
+
+.h2-a-tutorial-container a {
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 1px var(--black);
+    cursor: pointer;
 }

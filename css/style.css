@@ -5,18 +5,26 @@ html {
 
 body {
     margin: 0;
-    padding: 14rem 0 0;
+    padding: 10rem 0 0;
     box-sizing: border-box;
-    background-color: var(--ligh-beige);
+    background: linear-gradient(
+    to bottom, 
+    white 0%,
+    #b2927a 10%, 
+    #977260 45%, 
+    #54341f 80%,
+    white 100%
+    );
 }
 
 :root {
     --black: #17171a;
-    --beige: #b2927a;
+    --white: white;
+    --cofee: #54341f;
     --dark-beige: #977260;
+    --beige: #b2927a;
     --ligh-beige: #f8e1cf;
     --light-cofee: #d0a35e;
-    --cofee: #54341f;
     --gray: #faf9f8;
 
     --fw-light: 300;
@@ -57,16 +65,16 @@ figure {
     flex-direction: row;
     align-items: center;
     position: fixed;
-    margin-top: -14rem;
+    margin-top: -10rem;
     width: 100%;
-    background-color: var(--black);
+    background-color: rgb(23, 23, 26, .9);
     z-index: 1
     ;
 }
 
 .navbar__a {
     font-size: 2rem;
-    margin: 4rem 2vw;
+    margin: 3rem 2vw;
     width: 15%;
     text-decoration: none;
     text-align: center;
@@ -268,12 +276,39 @@ footer {
     justify-content: center;
     text-align: center;
     border-bottom: 1px solid var(--gray);
-    padding: 3rem;
+    padding: 0 3rem 4rem;
 }
 
 .p-container p {
     font-size: 2rem;
     font-weight: var(--fw-light);
+    color: var(--black);
+}
+
+.p-container :nth-child(2) {
+    margin-bottom: 2rem;
+}
+
+.p-container :nth-child(3) {
+    margin-bottom: 2rem;
+}
+
+.p-container :nth-child(4) {
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.p-container :nth-child(5) {
+    font-style: italic;
+}
+
+.p-container :nth-child(6) {
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.p-container :nth-child(7) {
+    font-weight: var(--fw-bolder);
 }
 
 .tutorials-container {
@@ -288,6 +323,7 @@ footer {
 .tutorial {
     position: relative;
     width: 45%;
+    margin: 3rem 0;
 }
 
 .tutorial-figure {
@@ -302,7 +338,7 @@ footer {
     transition: all .6s;
 }
 
-.tutorial-figure__img:hover {
+.tutorial:hover .tutorial-figure__img {
     transform: scale(1.2);
     filter: brightness(.5);
 }
@@ -335,4 +371,10 @@ footer {
     font-size: 1.4rem;
     text-shadow: 1px 1px 1px var(--black);
     cursor: pointer;
+    transition: all .4s;
+}
+
+.h2-a-tutorial-container a:hover {
+    color: var(--light-cofee);
+    text-decoration: underline;
 }

@@ -74,11 +74,19 @@ figure {
 
 .navbar__a {
     font-size: 2rem;
-    margin: 3rem 2vw;
+    margin: 1.4rem 2vw;
     width: 15%;
     text-decoration: none;
     text-align: center;
     color: var(--light-cofee);
+}
+
+.navbar__a figure {
+    height: 5rem;
+}
+
+.navbar__a figure img {
+    height: 100%;
 }
 
 .navbar_ul {
@@ -343,10 +351,6 @@ footer {
     filter: brightness(.5);
 }
 
-.espresso-tutorial {
-
-}
-
 .h2-a-tutorial-container {
     display: flex;
     flex-direction: column;
@@ -377,4 +381,22 @@ footer {
 .h2-a-tutorial-container a:hover {
     color: var(--light-cofee);
     text-decoration: underline;
+}
+
+/* ---------- TUTORIALES-ESPRESSO ---------- */
+
+.parallax-container {
+    height: calc(100vh - 10rem);
+    width: 100%;
+}
+
+.parallax-img-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.parallax-img-container {
+    height: 100%;
+    width: 100%;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contacto - Tienda de café</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,10 +20,88 @@
                 <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="#">NUESTRO MENÚ</a></li>
                 <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="./trabajaentdc.html">TRABAJÁ CON NOSOTROS</a></li>
                 <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="./franquicias.html">FRANQUICIAS</a></li>
-                <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="./contacto.html">CONTACTO</a></li>
+                <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="#">CONTACTO</a></li>
             </ul>
         </nav>
     </head>
+
+    <main class="trabajaentdc-main">
+
+        
+    
+    <div class="contacto-form-container-flex">
+        <form class="contacto-form">
+
+            <div class="contacto-div-title">   
+                <h1 class="contacto-h1">COMUNICATE CON NOSOTROS</h1>
+                <span class="contact-line"></span>				
+            </div>
+
+            <div  class="contacto-div-title">
+                <p class="trabajaentdc-p">Ante cualquier consulta no dudes en comunicarte. Dejá tus datos y consulta utilizando el formulario a continuación y nos contactaremos a la brevedad.</p>                    
+            </div>
+
+            <div class="contacto-form-container">
+    
+                    <div class="trabajaentdc-form-div">
+                        <label class="trabajaentdc-form-label" cfor="Nombre">Nombre</label><br>
+                        <input class="contacto-form-input" type="text" id="Nombre" name="Nombre"><br>
+                    </div>
+    
+                    <div class="trabajaentdc-form-div">
+                        <label class="trabajaentdc-form-label" cfor="Email">E-mail</label><br>
+                        <input class="contacto-form-input" type="email" id="Email" name="Email"><br>
+                    </div>
+
+            </div> 
+    
+            <div class="contacto-form-container">
+    
+                <div class="trabajaentdc-form-div">
+                    <label class="trabajaentdc-form-label" cfor="Asunto">Asunto</label><br>
+                    <input class="contacto-form-input" type="Asunto" id="Asunto" name="Asunto"><br>
+                </div>
+    
+                <div class="trabajaentdc-form-div">
+                    <label class="trabajaentdc-form-label" cfor="Puesto">Mensaje</label><br>
+                    <textarea class="contacto-form-textarea" name="message" rows="10" cols="30"></textarea><br>
+                </div> 
+    
+            </div> 
+             
+            <div class="contacto-form-container">
+    
+                <div class="trabajaentdc-form-div">
+                    <button class="contacto-form-botton" type="button" onclick="alert('Hello World!')">ENVIAR</button>
+                </div>
+    
+            </div>  
+    
+        </form>
+
+        <div class="contacto-form-line">	
+        </div>
+
+        <div class="contacto-form">		
+            <div>
+                <div  class="contacto-div-title">
+                    <h1 class="contacto-h1">NUESTRAS REDES SOCIALES</h1>
+                    <span class="contact-line"></span>
+                </div>
+                <div class=".contacto-icons-container">
+                    <div class="contacto-icons-div">
+                        <a class="contacto-social-icon-face" href="#"><img src="./img/facebook-icon.svg" alt="ícono de facebook"></a>
+                    </div>
+                    
+                    <div class="contacto-icons-div">
+                        <a class="contacto-social-icon-ig" href="#"><img src="./img/instagram-icon.svg" alt="ícono de instagram"></a>    
+                    </div>
+                </div>
+        </div>
+
+    </div>
+    
+    </main>
 
     <footer>
         <div class="footer-container">

@@ -390,13 +390,18 @@ footer {
     width: 100%;
 }
 
-.parallax-img-container {
+.parallax-container {
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
 
 .parallax-img-container {
+    height: 100%;
+    width: 100%;
+}
+
+.parallax-img {
     height: 100%;
     width: 100%;
 }

@@ -6,14 +6,7 @@ html {
 body {
     margin: 0;
     padding: 10rem 0 0;
-    background: linear-gradient(
-    to bottom, 
-    white 0%,
-    #b2927a 10%, 
-    #977260 45%, 
-    #54341f 80%,
-    white 100%
-    );
+    background-color: var(--very-ligh-beige);
 }
 
 * {
@@ -21,12 +14,13 @@ body {
 }
 
 :root {
-    --black: #17171a;
+    --black: #42424b;
     --white: white;
     --cofee: #54341f;
-    --dark-beige: #977260;
-    --beige: #b2927a;
+    --very-ligh-beige: #fff7f1;
     --ligh-beige: #f8e1cf;
+    --beige: #b2927a;
+    --dark-beige: #977260;
     --light-cofee: #d0a35e;
     --gray: #faf9f8;
 
@@ -55,6 +49,11 @@ h4 {
 p {
     font-size: 1rem;
     margin: 0;
+    font-weight: var(--fw-light);
+}
+
+.p-bold {
+    font-weight: var(--fw-medium);
 }
 
 figure {
@@ -141,13 +140,15 @@ footer {
 
 .footer-ul-li {
     list-style: none;
+    margin: 1.4rem 0;
 }
 
 .footer-ul-li__a {
     font-size: 1.4rem;
     font-weight: var(--fw-light);
     color: var(--ligh-beige);
-    text-decoration: none;
+    text-decoration: none;    margin-top: 2rem;
+
 }
 
 .footer-p-container {
@@ -166,6 +167,10 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.suscribe-container h3 {
+    margin-top: 2rem;
 }
 
 .form-footer {
@@ -648,6 +653,7 @@ display: block;
     color: var(--gray);
     font-size: 6rem;
     margin-left: 4rem;
+    text-shadow: 1px 1px 1px var(--black);
 }
 
 .receta {
@@ -665,8 +671,8 @@ display: block;
 .receta p {
     font-size: 1.8rem;
     color: var(--black);
-    font-weight: var(--fw-light);
     margin: 1.4rem;
+    text-align: center;
 }
 
 .pasos-container {

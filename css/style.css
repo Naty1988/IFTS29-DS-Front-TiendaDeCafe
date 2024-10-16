@@ -56,6 +56,10 @@ p {
     font-weight: var(--fw-medium);
 }
 
+.p-italic {
+    font-style: italic;
+}
+
 figure {
     margin: 0;
 }
@@ -675,6 +679,7 @@ display: block;
     color: var(--black);
     margin: 1.4rem;
     text-align: center;
+    width: 800px;
 }
 
 .pasos-container {

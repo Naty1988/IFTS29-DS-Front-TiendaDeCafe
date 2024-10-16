@@ -167,6 +167,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 25%;
 }
 
 .suscribe-container h3 {
@@ -177,6 +178,7 @@ footer {
     display: flex;
     flex-direction: row;
     height: 4rem;
+    width: 100%;
 }
 
 .form-footer input {
@@ -184,7 +186,7 @@ footer {
     margin: 0;
     padding: .8rem;
     border: 2px solid var(--black);
-    width: 30vw;
+    width: 100%;
 }
 
 .form-footer button {

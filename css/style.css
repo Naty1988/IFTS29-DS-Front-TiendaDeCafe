@@ -135,6 +135,7 @@ footer {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-evenly;
+    width: 100vw;
     margin: 2rem 4vw 1rem;
 }
 

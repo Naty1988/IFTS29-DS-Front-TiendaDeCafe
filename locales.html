@@ -8,20 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-
-    <style>
-        /* Estilos básicos */
-        #map {
-        }
-        #results {
-        }
-        .card {
-            border: 1px solid #ccc;
-            margin: 10px;
-            padding: 10px;
-        }
-    </style>
-
 </head>
 <body>
     <head>
@@ -48,8 +34,8 @@
         <div class="search-locationscards-container">
             <div class="search-container">
                 <input type="text" id="address" placeholder="Ingresa tu dirección">
-                <button id="search-btn" class="button-1">Buscar</button>
-                <button id="auto-fill-btn" class="button-1">Usar mi ubicación</button>            
+                <button id="search-btn" class="button-icon"><img src="./img/search-icon.svg" alt=""></button>
+                <button id="auto-fill-btn" class="button-icon"><img src="./img/find-icon.svg" alt=""></button>            
             </div>
             <div id="results" class="locationcards-container"></div>
         </div>
@@ -169,7 +155,7 @@
     
         filteredResults.forEach((place) => {
             const card = document.createElement("div");
-            card.classList.add("card");
+            card.classList.add("locationcards");
             card.innerHTML = `<h3>${place.name}</h3><p>${place.vicinity}</p>`;
             resultsContainer.appendChild(card);
     

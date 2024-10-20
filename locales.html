@@ -12,15 +12,8 @@
     <style>
         /* Estilos básicos */
         #map {
-            height: 500px; /* Altura del mapa */
-            width: 70%; /* Ancho del mapa */
-            float: right; /* Mapa a la derecha */
         }
         #results {
-            width: 30%; /* Ancho del listado de resultados */
-            float: left; /* Listado a la izquierda */
-            max-height: 500px; /* Altura máxima */
-            overflow-y: auto; /* Scroll vertical si es necesario */
         }
         .card {
             border: 1px solid #ccc;
@@ -50,14 +43,17 @@
         </nav>
     </head>
 
-    <section class="locations-container" style="width: 100vw;">
-        <h1>Buscar Tiendas de Café</h1>
-        <input type="text" id="address" placeholder="Ingresa tu dirección">
-        <button id="search-btn">Buscar</button>
-    
-        <div id="results"></div>
-        <div id="map"></div>
-        <button id="auto-fill-btn">Usar mi ubicación</button>    
+    <h2>Buscar Tiendas de Café</h2>
+    <section class="locations-container">
+        <div class="search-locationscards-container">
+            <div class="search-container">
+                <input type="text" id="address" placeholder="Ingresa tu dirección">
+                <button id="search-btn" class="button-1">Buscar</button>
+                <button id="auto-fill-btn" class="button-1">Usar mi ubicación</button>            
+            </div>
+            <div id="results" class="locationcards-container"></div>
+        </div>
+        <div id="map" class="map"></div>
     </section>
 
     <footer">

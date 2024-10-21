@@ -467,10 +467,43 @@ footer {
 }
 
 .map {
-    height: 60vh; /* Altura del mapa */
-    width: 70%; /* Ancho del mapa */
+    height: 60vh;
+    width: 70%;
 }
 
+/* ---------- NUESTRO MENU ---------- */
+
+.nuestromenu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.nuestromenu-left img {
+    width: 100%;
+}
+
+.nuestromenu-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.nuestromenu-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.nuestromenu-right img {
+    width: 100%;
+}
 
 
 /* ---------- TRABAJA EN TDC ---------- */
@@ -728,13 +761,31 @@ display: block;
 
 .parallax-h2-container {
     position: absolute;
+    margin-left: 10rem;
+    width: 40%;
 }
 
 .parallax-h2-container h2 {
     color: var(--gray);
     font-size: 6rem;
-    margin-left: 4rem;
     text-shadow: 1px 1px 1px var(--black);
+    line-height: 1.4;
+}
+
+.parallax-h2-container h3 {
+    color: var(--gray);
+    font-size: 5rem;
+    text-shadow: 1px 1px 1px var(--black);
+    font-weight: var(--fw-light);
+    line-height: 1.2;
+}
+
+.parallax-h2-container p {
+    color: var(--gray);
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px var(--black);
+    line-height: 1.4;
+    width: 80%;
 }
 
 .receta {

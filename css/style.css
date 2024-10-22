@@ -128,6 +128,7 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: var(--cofee);
+    width: 100%;
 }
 
 .footer-container {
@@ -135,8 +136,8 @@ footer {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-evenly;
-    width: 100vw;
-    margin: 2rem 4vw 1rem;
+    width: 100%;
+    padding: 2rem 0 1rem;
 }
 
 .footer-container h2 {
@@ -481,8 +482,11 @@ footer {
     width: 100%;
 }
 
-.nuestromenu-left img {
+.nuestromenu-img-container {
+    overflow: hidden;
+    margin: 2rem;
     width: 100%;
+    margin: 1rem 0;
 }
 
 .nuestromenu-left {
@@ -490,7 +494,17 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 50%;
+    width: 100%;
+    margin: 2rem 1rem 2rem 10vw;
+}
+
+.nuestromenu-left img {
+    width: 100%;
+    transition: all .6s;
+}
+
+.nuestromenu-left img:hover {
+    transform: scale(1.2);
 }
 
 .nuestromenu-right {
@@ -498,13 +512,48 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 50%;
+    width: 100%;
+    margin: 2rem 10vw 2rem 1rem;
 }
 
 .nuestromenu-right img {
     width: 100%;
+    transition: all .6s;
 }
 
+.nuestromenu-right img:hover {
+    transform: scale(1.2);
+}
+
+#nuestratienda-parallax-bottom {
+    height: 75vh;
+}
+
+#parallax-info-container {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+#parallax-info-container h2 {
+    color: var(--beige);
+    font-size: 7rem;
+}
+
+#parallax-info-container p {
+    width: 100%;
+}
+
+.a-nuestratienda-parallax-bottom {
+    border: 2px solid var(--gray);
+    color: var(--gray);
+    background-color: transparent;
+    text-decoration: none;
+    padding: 1.2rem 2rem;
+    margin: 2rem;
+    font-size: 1.6rem;
+    display: inline-block;
+}
 
 /* ---------- TRABAJA EN TDC ---------- */
 

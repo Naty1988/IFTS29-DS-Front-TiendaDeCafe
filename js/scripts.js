@@ -14,37 +14,33 @@ window.addEventListener('scroll', function() {
 });
 
 // Seleccionamos todas las imágenes y sus versiones no visibles
-const sliderImg1 = document.querySelector('.slider-img1');
-const nonVisibleImg1 = document.querySelector('.slider-img1-nonvisible');
-const sliderImg2 = document.querySelector('.slider-img2');
-const nonVisibleImg2 = document.querySelector('.slider-img2-nonvisible');
-const sliderImg3 = document.querySelector('.slider-img3');
-const nonVisibleImg3 = document.querySelector('.slider-img3-nonvisible');
-
-// Seleccionamos todas las imágenes y sus versiones no visibles
 const sliderImages = document.querySelectorAll('.slider img'); 
 const nonVisibleImages = document.querySelectorAll('.slider-img1-nonvisible, .slider-img2-nonvisible, .slider-img3-nonvisible');
 const containers = document.querySelectorAll('.slider-img1-nonvisible-container, .slider-img2-nonvisible-container, .slider-img3-nonvisible-container');
 
-// Función para cerrar todas las imágenes abiertas
+// Función para cerrar todas las imágenes abiertas y quitar el background
 function closeAllImages() {
     nonVisibleImages.forEach(img => img.classList.remove('show'));
-    containers.forEach(container => container.style.zIndex = '');
+    containers.forEach(container => {
+        container.style.zIndex = ''; // Reseteamos el z-index
+        container.style.backgroundColor = ''; // Reseteamos el background
+    });
 }
 
 // Función que controla el toggle de mostrar/ocultar imagen
-function toggleImage(nonVisibleImg) {
+function toggleImage(nonVisibleImg, container) {
     const isVisible = nonVisibleImg.classList.contains('show');
     closeAllImages(); // Cierra todas antes de abrir la actual
-    if (!isVisible) { // Si no estaba visible, la mostramos
+    if (!isVisible) { // Si no estaba visible, la mostramos y cambiamos el fondo
         nonVisibleImg.classList.add('show');
         containers.forEach(container => container.style.zIndex = '2');
+        container.style.backgroundColor = 'rgb(23, 23, 26, 0.7)'; // Aplicamos el fondo oscuro
     }
 }
 
 // Agregar eventos de click a las imágenes del slider
 sliderImages.forEach((img, index) => {
-    img.addEventListener('click', () => toggleImage(nonVisibleImages[index]));
+    img.addEventListener('click', () => toggleImage(nonVisibleImages[index], containers[index]));
 });
 
 // Ocultar la imagen no visible al hacer click en ella misma

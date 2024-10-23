@@ -60,6 +60,10 @@ p {
     font-style: italic;
 }
 
+ul {
+    margin: 0;
+}
+
 figure {
     margin: 0;
 }
@@ -177,7 +181,7 @@ footer {
 }
 
 .suscribe-container h3 {
-    margin-top: 2rem;
+    text-align: center;
 }
 
 .form-footer {
@@ -185,6 +189,7 @@ footer {
     flex-direction: row;
     height: 4rem;
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 .form-footer input {
@@ -227,66 +232,6 @@ footer {
     height: 32px;
 }
 
-/* ---------- NUESTRO CAFE ---------- */
-
-.cards-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.card, .card-capsule {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0rem 0;
-    padding: .8rem;
-    width: 30%;
-    min-width: 360px;
-}
-
-.card figure, .card-capsule figure {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    background-size: 100%;
-    background-position: center;
-    transition: background-size .6s ease;
-}
-
-.card figure img, .card-capsule figure img {
-    width: 100%;
-    height: 100%;
-    transition: opacity .6s;
-}
-
-.card figure:hover {
-    cursor: pointer;
-    background-image: url(../img/coffe-bag-description.jpg); 
-    background-size: 120%;
-}
-
-.card-capsule figure:hover {
-    cursor: pointer;
-    background-image: url(../img/coffe-capsule-description.jpg); 
-    background-size: 110%;
-}
-
-.card figure:hover img {
-    opacity: 0;
-}
-
-.card-capsule figure:hover img {
-    opacity: 0;
-}
-
-.card h4, .card-capsule h4 {
-    margin: 1rem 0;
-}
 
 /* ---------- TUTORIALES ---------- */
 

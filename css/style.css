@@ -566,9 +566,17 @@ footer {
 .slider figure img {
     width: 100%;
     box-shadow: 1px 1px 10px .4px;
+    cursor: pointer;
+    z-index: 3;
 }
 
-.slider-img1-nonvisible-container {
+.slider figure img:hover {
+    transform: scale(1.01);
+}
+
+.slider-img1-nonvisible-container, 
+.slider-img2-nonvisible-container, 
+.slider-img3-nonvisible-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -576,9 +584,12 @@ footer {
     height: 100vh;
     position: fixed;
     margin-top: -10rem;
+    z-index: -1;
 }
 
-.slider-img1-nonvisible {
+.slider-img1-nonvisible, 
+.slider-img2-nonvisible, 
+.slider-img3-nonvisible {
     display: none;
     position: fixed;
     width: 90%;

@@ -86,14 +86,3 @@
     padding: 10px 15px; 
 }
 
-.trabajaentdc-form-botton {
-    height: auto;
-    margin: 0;
-    padding: .8rem;  
-    color: white;
-    background-color: var(--light-cofee);
-    font-family: "Oswald", sans-serif;
-    font-size: 1.4rem;
-    margin-bottom: 2%;  
-    width: 8%; 
-}

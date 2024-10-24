@@ -68,6 +68,15 @@ figure {
     margin: 0;
 }
 
+input {
+    padding: 0 15px;
+    height: 42px;
+    border: 2px solid rgba(129, 129, 129, .2);
+    box-shadow: none;
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+
 label {
     font-size: 2rem;
 }
@@ -82,6 +91,52 @@ label {
     font-size: 1.6rem;
     display: inline-block;
 }
+
+.button-forms {
+    height: auto;
+    margin: 0;
+    padding: .8rem;  
+    color: white;
+    background-color: var(--light-cofee);
+    font-family: "Oswald", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 2%;  
+    width: 10rem; 
+}
+
+.button-1 {
+    background-color: var(--gray);
+    padding: .8rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.parallax-container {
+    position: relative;
+    height: calc(100vh - 10rem);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.parallax-img-container {
+    height: 100%;
+    width: 100%;
+}
+
+.parallax-img {
+    height: 150%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    transition: transform 0.1s ease-out;
+}
+
 
 
 /* ---------- NAVBAR ---------- */
@@ -211,7 +266,6 @@ footer {
 .form-footer input {
     height: auto;
     margin: 0;
-    padding: .8rem;
     border: 2px solid var(--black);
     width: 100%;
 }
@@ -253,165 +307,3 @@ footer {
 
 
 
-/* ---------- TUTORIALES-ESPRESSO ---------- */
-
-.parallax-container {
-    position: relative;
-    height: calc(100vh - 10rem);
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-}
-
-.parallax-img-container {
-    height: 100%;
-    width: 100%;
-}
-
-.parallax-img {
-    height: 150%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(0);
-    transition: transform 0.1s ease-out;
-}
-
-.parallax-h2-container {
-    position: absolute;
-    margin-left: 10rem;
-    width: 40%;
-}
-
-.parallax-h2-container h2 {
-    color: var(--gray);
-    font-size: 6rem;
-    text-shadow: 1px 1px 1px var(--black);
-    line-height: 1.4;
-}
-
-.parallax-h2-container h3 {
-    color: var(--gray);
-    font-size: 5rem;
-    text-shadow: 1px 1px 1px var(--black);
-    font-weight: var(--fw-light);
-    line-height: 1.2;
-}
-
-.parallax-h2-container p {
-    color: var(--gray);
-    font-size: 2rem;
-    text-shadow: 1px 1px 1px var(--black);
-    line-height: 1.4;
-    width: 80%;
-}
-
-.receta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1.6rem 0;
-    padding: 2rem;
-    width: 100%;
-    height: auto;
-    background-color: var(--gray);
-}
-
-.receta p {
-    font-size: 1.8rem;
-    color: var(--black);
-    margin: 1.4rem;
-    text-align: center;
-    width: 800px;
-}
-
-.pasos-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 6rem 0;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.pasos-container > h3 {
-    margin-top: 3rem;
-    font-style: italic;
-}
-
-.paso {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    width: 90%;
-    border-bottom: 1px solid var(--gray);
-}
-
-.paso-img-container {
-    width: 40%;
-    margin: 4rem;
-}
-
-.paso-img {
-    width: 100%;
-    height: auto;
-}
-
-.paso-explanation {
-    width: 40%;
-    margin: 3rem;
-}
-
-.paso-explanation h3 {
-    margin-bottom: 2rem;
-}
-
-.paso-explanation p {
-    font-size: 1.8rem;
-    font-weight: var(--fw-light);
-}
-
-.bottom {
-    margin-bottom: 6rem;
-}
-
-.parallax-container-bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.parallax-h2-container-bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.parallax-h2-container-bottom h3 {
-    font-size: 4rem;
-    color: var(--ligh-beige);
-    text-shadow: 1px 1px 1px var(--black);
-}
-
-.parallax-h2-container-bottom h2 {
-    font-size: 5rem;
-    color: var(--gray);
-    margin: 0;
-    text-shadow: 1px 1px 1px var(--black);
-}
-
-.button-1 {
-    background-color: var(--gray);
-    padding: .8rem;
-    font-size: 1.6rem;
-    text-decoration: none;
-    margin-top: 1rem;
-}

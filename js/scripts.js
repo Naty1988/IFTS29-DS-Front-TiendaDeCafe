@@ -1,19 +1,22 @@
+/* ---------- PARALLAX ---------- */
+
+
 window.addEventListener('scroll', function() {
     const parallaxImages = document.querySelectorAll('.parallax-img');
 
     parallaxImages.forEach(function(img) {
-        const rect = img.getBoundingClientRect(); // Obtiene la posición relativa al viewport
-        const scrollPosition = window.pageYOffset; // Posición del scroll de la página
-        const imgTop = rect.top + scrollPosition; // Posición absoluta de la imagen en la página
+        const rect = img.getBoundingClientRect();
+        const scrollPosition = window.pageYOffset;
+        const imgTop = rect.top + scrollPosition;
 
-        // Calcula el movimiento parallax solo si la imagen está en el viewport
         if (scrollPosition + window.innerHeight > imgTop && scrollPosition < imgTop + rect.height) {
             img.style.transform = 'translateY(' + (scrollPosition - imgTop) * 0.2 + 'px)';
         }
     });
 });
 
-// Seleccionamos todas las imágenes y sus versiones no visibles
+/* ---------- OVERLAY ---------- */
+
 const sliderImages = document.querySelectorAll('.slider img'); 
 const nonVisibleImages = document.querySelectorAll('.slider-img1-nonvisible, .slider-img2-nonvisible, .slider-img3-nonvisible');
 const containers = document.querySelectorAll('.slider-img1-nonvisible-container, .slider-img2-nonvisible-container, .slider-img3-nonvisible-container');
@@ -22,21 +25,21 @@ const containers = document.querySelectorAll('.slider-img1-nonvisible-container,
 function closeAllImages() {
     nonVisibleImages.forEach(img => img.classList.remove('show'));
     containers.forEach(container => {
-        container.style.zIndex = ''; // Reseteamos el z-index
-        container.style.backgroundColor = ''; // Reseteamos el background
-        container.style.display = 'none'; // Reseteamos el display a none
+        container.style.zIndex = '';
+        container.style.backgroundColor = '';
+        container.style.display = 'none';
     });
 }
 
 // Función que controla el toggle de mostrar/ocultar imagen
 function toggleImage(nonVisibleImg, container) {
     const isVisible = nonVisibleImg.classList.contains('show');
-    closeAllImages(); // Cierra todas antes de abrir la actual
-    if (!isVisible) { // Si no estaba visible, la mostramos y cambiamos el fondo
+    closeAllImages();
+    if (!isVisible) {
         nonVisibleImg.classList.add('show');
         containers.forEach(container => container.style.zIndex = '2');
-        container.style.display = 'flex'; // Cambiamos el display a flex
-        container.style.backgroundColor = 'rgb(23, 23, 26, 0.7)'; // Aplicamos el fondo oscuro
+        container.style.display = 'flex';
+        container.style.backgroundColor = 'rgb(23, 23, 26, 0.7)';
     }
 }
 

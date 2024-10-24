@@ -1,4 +1,4 @@
-/* ---------- PARALLAX ---------- */
+/* ------------------------------ PARALLAX ------------------------------ */
 
 
 window.addEventListener('scroll', function() {
@@ -15,7 +15,7 @@ window.addEventListener('scroll', function() {
     });
 });
 
-/* ---------- OVERLAY ---------- */
+/* ------------------------------ OVERLAY ------------------------------ */
 
 const sliderImages = document.querySelectorAll('.slider img'); 
 const nonVisibleImages = document.querySelectorAll('.slider-img1-nonvisible, .slider-img2-nonvisible, .slider-img3-nonvisible');

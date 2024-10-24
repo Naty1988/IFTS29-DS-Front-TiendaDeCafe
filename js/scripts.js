@@ -20,6 +20,7 @@ window.addEventListener('scroll', function() {
 const sliderImages = document.querySelectorAll('.slider img'); 
 const nonVisibleImages = document.querySelectorAll('.slider-img1-nonvisible, .slider-img2-nonvisible, .slider-img3-nonvisible');
 const containers = document.querySelectorAll('.slider-img1-nonvisible-container, .slider-img2-nonvisible-container, .slider-img3-nonvisible-container');
+const overlay = document.getElementById('overlay');
 
 // Función para cerrar todas las imágenes abiertas, quitar el background y resetear el display
 function closeAllImages() {
@@ -29,6 +30,7 @@ function closeAllImages() {
         container.style.backgroundColor = '';
         container.style.display = 'none';
     });
+    overlay.classList.remove('active'); // Desactivar el overlay lentamente
 }
 
 // Función que controla el toggle de mostrar/ocultar imagen
@@ -40,6 +42,7 @@ function toggleImage(nonVisibleImg, container) {
         containers.forEach(container => container.style.zIndex = '2');
         container.style.display = 'flex';
         container.style.backgroundColor = 'rgb(23, 23, 26, 0.7)';
+        overlay.classList.add('active'); // Activar el overlay lentamente
     }
 }
 
@@ -48,7 +51,11 @@ sliderImages.forEach((img, index) => {
     img.addEventListener('click', () => toggleImage(nonVisibleImages[index], containers[index]));
 });
 
-// Ocultar la imagen no visible al hacer click en ella misma
+// Ocultar la imagen no visible y el overlay al hacer click en ella misma
 nonVisibleImages.forEach(img => {
     img.addEventListener('click', closeAllImages);
 });
+
+// Agregar evento de clic al overlay para cerrarlo al hacer clic fuera de la imagen
+overlay.addEventListener('click', closeAllImages);
+

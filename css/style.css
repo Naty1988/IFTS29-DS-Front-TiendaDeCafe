@@ -7,6 +7,14 @@ body {
     margin: 0;
     padding: 10rem 0 0;
     background-color: var(--very-ligh-beige);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
 }
 
 * {
@@ -139,14 +147,14 @@ label {
 
 
 
-/* ---------- NAVBAR ---------- */
+/* ------------------------------ NAVBAR ------------------------------ */
 
 .navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
     position: fixed;
-    margin-top: -10rem;
+    top: 0;
     width: 100%;
     background-color: rgb(23, 23, 26, .9);
     z-index: 1
@@ -197,7 +205,7 @@ label {
     color: var(--ligh-beige);
 }
 
-/* ---------- FOOTER ---------- */
+/* ------------------------------ FOOTER ------------------------------ */
 
 footer {
     display: flex;
@@ -301,9 +309,5 @@ footer {
     width: 32px;
     height: 32px;
 }
-
-
-
-
 
 

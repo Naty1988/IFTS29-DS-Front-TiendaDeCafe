@@ -5,7 +5,7 @@ html {
 
 body {
     margin: 0;
-    padding: 10rem 0 0;
+    padding: 7.8rem 0 0;
     background-color: var(--very-ligh-beige);
     display: flex;
     flex-direction: column;
@@ -213,6 +213,20 @@ label {
     color: var(--ligh-beige);
 }
 
+.navbar-sc-container {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(23, 23, 26, .9);
+    height: 8rem;
+    z-index: -1;
+    padding: 0 2rem;
+}
+
 /* ------------------------------ FOOTER ------------------------------ */
 
 footer {
@@ -327,6 +341,7 @@ footer {
         position: fixed;
         left: 0;
         top: 0;
+        z-index: 2;
     }
     .navbar {
         position: relative;
@@ -358,12 +373,30 @@ footer {
         cursor: pointer;
     }
 
-    .navbar-home-cross_icon {
+    .cross-button, .bars-button{
         width: 28px;
     }
     
     .navbar__a {
         display: none;
+        margin: 0;
+    }
+
+    .navbar__a-sc {
+        text-align: center;
+        color: var(--light-cofee);    
+    }
+
+    .navbar-sc-container {
+        display: flex;
+    }
+    
+    .navbar__a-sc figure {
+        height: 5rem;
+    }
+    
+    .navbar__a-sc figure img {
+        height: 100%;
     }
     
     .navbar__a figure {

@@ -59,3 +59,4 @@ nonVisibleImages.forEach(img => {
 // Agregar evento de clic al overlay para cerrarlo al hacer clic fuera de la imagen
 overlay.addEventListener('click', closeAllImages);
 
+/* ------------------------------ NAVBAR ------------------------------ */

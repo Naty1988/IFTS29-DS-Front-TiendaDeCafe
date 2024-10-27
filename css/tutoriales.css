@@ -57,7 +57,8 @@
 .tutorial {
     position: relative;
     width: 45%;
-    margin: 3rem 0;
+    min-width: 400px;
+    margin: 1rem;
 }
 
 .tutorial-figure {
@@ -240,3 +241,6 @@
     text-shadow: 1px 1px 1px var(--black);
 }
 
+@media (max-width: 650px) {
+    
+}

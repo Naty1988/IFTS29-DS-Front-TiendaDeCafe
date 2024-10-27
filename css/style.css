@@ -222,12 +222,13 @@ label {
     align-items: center;
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     background-color: rgb(23, 23, 26, .9);
     height: 8rem;
     z-index: -1;
-    padding: 0 2rem;
 }
+
+
 
 /* ------------------------------ FOOTER ------------------------------ */
 
@@ -397,7 +398,7 @@ footer {
         width: 28px;
         height: 28px;
         padding: 0;
-        margin: 0;
+        margin-right: 2rem;
         border: none;
         background-color: transparent;
         cursor: pointer;
@@ -414,7 +415,8 @@ footer {
 
     .navbar__a-sc {
         text-align: center;
-        color: var(--light-cofee);    
+        color: var(--light-cofee);
+        margin-left: 2rem;
     }
 
     .navbar-sc-container {
@@ -468,5 +470,13 @@ footer {
 
     .suscribe-container {
         margin: 2rem 0;
+    }
+
+    .cards-container {
+        width: 100%;
+    }
+
+    .card, .card-capsule {
+        min-width: 100%;
     }
 }

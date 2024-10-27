@@ -241,6 +241,24 @@
     text-shadow: 1px 1px 1px var(--black);
 }
 
+@media (max-width: 980px) {
+    .tutorial {
+        width: 90%;
+    }
+}
+
 @media (max-width: 650px) {
-    
+    .main-tutoriales {
+        padding: 0;
+    }
+
+    .tutorials-container {
+        margin: 0;
+        width: 100%;
+    }
+
+    .tutorial {
+        width: 98%;
+        min-width: fit-content;
+    }
 }

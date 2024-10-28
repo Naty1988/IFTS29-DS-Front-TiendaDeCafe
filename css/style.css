@@ -1006,3 +1006,306 @@ display: block;
     text-decoration: none;
     margin-top: 1rem;
 }
+
+/* ---------- INDEX MAIN ---------- */ 
+
+.index_banner {
+    background-image: url(../img/home.jpg);    
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;   
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 5%;
+}
+
+.index_banner_info {
+    padding: 0.3 rem;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+    color: white;
+    margin: auto;
+}
+
+.index_banner_title1 {
+    font-size: 7rem;
+}
+
+.index_banner_title2 {
+    font-size: 9rem;
+    font-weight: 500;    
+}
+
+.index_banner_title3 {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+.index_banner_btn {
+    font-size: 2rem;
+    background-color: transparent;
+    border: solid 3px white;
+    color: #ccc;
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+.cardHoverBrasil figure:hover {
+    cursor: pointer;
+    background-image: url(../img/home2CafeBrasilTransicion.png); 
+    background-size: 120%;
+}
+
+.cardHoverBarista figure:hover {
+    cursor: pointer;
+    background-image: url(../img/home2CafeBaristaTransicion.png); 
+    background-size: 120%;
+}
+
+.cardHoverMinka figure:hover {
+    cursor: pointer;
+    background-image: url(../img/home2CafeMinkaTransicion.png); 
+    background-size: 120%;
+    background-repeat: no-repeat;
+    
+}
+
+.cardHomeSize {
+    width: 10%;
+}
+
+.cardHomeSize h4 {
+    font-size: 2rem;
+    color: #464646;
+}
+
+.home-dots {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.home-dots-1 {
+    height: 20px;
+    width: 20px;
+    margin: 1rem;   
+    border: solid 5px var(--black);
+    border-radius: 50%;
+    background-color:transparent;
+}
+
+.home-seccion-3 {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.home-seccion-3-container-left{
+    width: 40%;
+    height: 70%;
+    background-image:  url(../img/home3Left.jpg);
+    background-size: cover;
+}
+
+.home-seccion-3-container-left:hover {
+    cursor: pointer;
+    background-image: url(../img/home3Left.jpg); 
+    background-size: 120%;
+}
+
+.home-seccion-3-container-rigth{
+    width: 40%;
+    height: 70%;
+    background-image:  url(../img/home3Rigth.jpg);
+    background-size: cover;
+}
+
+.home-seccion-3-container-rigth:hover {
+    cursor: pointer;
+    background-image: url(../img/home3Rigth.jpg); 
+    background-size: 120%;
+}
+
+.home-seccion-3-container-p {
+    background-color: var(--white);
+    padding: 0.5rem;
+    margin-top:30%;
+    margin-left: 5%;
+    font-size: 2rem;
+    width: 60%;
+    font-style: var(--fw-bolder);
+}
+
+.home-seccion-3-container-h3 {
+    padding: 0.5rem;
+    margin-top:0%;
+    margin-left: 5%;
+    font-size: 6rem;
+    color: var(--white);
+}
+
+.home-seccion-3-container-btn {
+    padding: 1rem;
+    margin-top:0%;
+    margin-left: 5%;
+    font-size: 1.5rem;
+    background-color: black;
+    color: #faf9f8;
+    padding: 0.5 rem;
+}
+
+section a {
+    text-decoration: none;
+    color: #17171a;
+}
+
+.home-seccion-4 {
+    background-image: url(../img/home5.jpg);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;      
+}
+
+.home-seccion-4-fondo{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.home-seccion-4-info {
+    text-align: center;  
+    padding: 0.3 rem;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;  
+    color: white;
+    margin: auto;
+}
+
+.home-seccion-4-title1 {
+    font-size: 5rem;
+    text-align: center;  
+}
+
+.home-seccion-4-title2 {
+    font-size: 8rem;
+    text-align: center; 
+    color: var(--dark-beige); 
+    font-weight: var(--fw-bolder);  
+}
+
+.home-seccion-4-title3 {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.home-seccion-4-btn {
+    font-size: 2rem;
+    background-color: transparent;
+    border: solid 3px white;
+    color: #ccc;
+    padding: 2rem 4rem 2rem 4rem;
+    align-items: center;
+    font-weight: var(--fw-bold);
+}
+
+.home-seccion-4-background {
+    background-color: #f5f5f5;
+    padding-top: 2rem;
+}
+
+.home-seccion-4-title {
+    color: #d0a35e;   
+    font-size: 2.5rem;
+    line-height: 20px;
+    font-weight: 200;
+}
+
+.home-seccion-4-back {
+    display: flex;
+    justify-content: space-evenly;   
+}
+
+.home-seccion-4-left {   
+    height: 100vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0rem 6rem 0rem 6rem;
+}
+
+.home-seccion-4-left-div {
+    text-align: right;
+    margin-bottom: 10%;
+}
+
+.home-seccion-4-left-div p {
+    font-size: 2rem;
+    color: #777;
+}
+
+.home-seccion-4-left-title {
+    color: #d0a35e;   
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+
+.home-seccion-4-middle {
+    background-image: url(../img/home4.jpg);    
+    width: 45vw;
+    padding: 1rem;
+    position: relative;
+    background-repeat: no-repeat; 
+}
+
+.home-seccion-4-rigth {   
+    height: 100vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0rem 6rem 0rem 6rem;
+}
+
+.home-seccion-4-rigth-div {
+    text-align: left;
+    margin-bottom: 10%;
+}
+
+.home-seccion-4-rigth-div p {
+    font-size: 2rem;
+    color: #777;
+}
+
+.home-seccion-4-h1 {
+    color: #17171a;
+    font-size: 5rem;
+}
+
+.home-seccion-4-div-line {
+    background-color: #c7a17a;
+    width: 200px;
+    height: 3px;
+    margin-bottom: 4rem;
+}

@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Tutorial CHEMEX - Tienda de café</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tutoriales.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <nav class="navbar">
-        <a class="navbar__a" href="./index.html">
-            <figure>
-                <img src="./img/TIENDADECAFE.svg" alt="">
-            </figure>
-        </a>
-        <ul class="navbar_ul">
-            <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="./nuestrocafe.html">NUESTRO CAFÉ</a></li>
-            <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="./tutoriales.html">TUTORIALES</a></li>
-            <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="#">LOCALES</a></li>
-            <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="#">NUESTRO MENÚ</a></li>
-            <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="./trabajaentdc.html">TRABAJÁ CON NOSOTROS</a></li>
-            <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="./franquicias.html">FRANQUICIAS</a></li>
-            <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="./contacto.html">CONTACTO</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="navbar-sc-container">
+            <a class="navbar__a-sc" href="./index.html">
+                <figure>
+                    <img src="./img/TIENDADECAFE.svg" alt="">
+                </figure>
+            </a>
+            <button class="navbar-home-button"><img class="bars-button" id="bars-button" src="./img/3bars.svg" alt=""></button>
+        </div>
+        <nav class="navbar" id="navbar">
+            <a class="navbar__a" href="./index.html">
+                <figure>
+                    <img src="./img/TIENDADECAFE.svg" alt="">
+                </figure>
+            </a>
+            <ul class="navbar_ul">
+                <li id="navbar-home-container" class="navbar_ul_li"><a class="navbar_ul_li__a" href="./index.html">INICIO</a><button class="navbar-home-button"><img class="cross-button" src="./img/cross-icon.svg" alt=""></button></li>
+                <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="./nuestrocafe.html">NUESTRO CAFÉ</a></li>
+                <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="./tutoriales.html">TUTORIALES</a></li>
+                <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="./locales.html">LOCALES</a></li>
+                <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="./nuestromenu.html">NUESTRO MENÚ</a></li>
+                <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="./trabajaentdc.html">TRABAJÁ CON NOSOTROS</a></li>
+                <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="./franquicias.html">FRANQUICIAS</a></li>
+                <li class="navbar_ul_li"><a class="navbar_ul_li__a" href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <section class="top">
@@ -142,20 +153,20 @@
 
     <footer>
         <div class="footer-container">
-            <h2 style="color: black;">TIENDA DE CAFE</h2>
-            <ul class="footer-ul">
+            <h2>TIENDA DE CAFE</h2>
+            <ul class="footer-ul footer-ul_contenidos">
                 <h3>CONTENIDOS</h3>
-                <li class="footer-ul-li"><a class="footer-ul-li__a" href="#">Inicio</a></li>
-                <li class="footer-ul-li"><a class="footer-ul-li__a" href="#">Nuestro Café</a></li>
-                <li class="footer-ul-li"><a class="footer-ul-li__a" href="#">Locales</a></li>
-                <li class="footer-ul-li"><a class="footer-ul-li__a" href="#">Nuestro menú</a></li>
+                <li class="footer-ul-li"><a class="footer-ul-li__a" href="./index.html">Inicio</a></li>
+                <li class="footer-ul-li"><a class="footer-ul-li__a" href="./nuestrocafe.html">Nuestro Café</a></li>
+                <li class="footer-ul-li"><a class="footer-ul-li__a" href="./locales.html">Locales</a></li>
+                <li class="footer-ul-li"><a class="footer-ul-li__a" href="./nuestromenu.html">Nuestro menú</a></li>
             </ul>
             <ul class="footer-ul">
-                <h3>CONTENIDOS</h3>
-                <li class="footer-ul-li"><a class="footer-ul-li__a" href="#">Tutoriales</a></li>
-                <li class="footer-ul-li"><a class="footer-ul-li__a" href="#">Trabajá en TDC</a></li>
-                <li class="footer-ul-li"><a class="footer-ul-li__a" href="#">Franquicias</a></li>
-                <li class="footer-ul-li"><a class="footer-ul-li__a" href="#">Contacto</a></li>
+                <h3>¿NECESITAS AYUDA?</h3>
+                <li class="footer-ul-li"><a class="footer-ul-li__a" href="./tutoriales.html">Tutoriales</a></li>
+                <li class="footer-ul-li"><a class="footer-ul-li__a" href="./trabajaentdc.html">Trabajá en TDC</a></li>
+                <li class="footer-ul-li"><a class="footer-ul-li__a" href="./franquicias.html">Franquicias</a></li>
+                <li class="footer-ul-li"><a class="footer-ul-li__a" href="./contacto.html">Contacto</a></li>
             </ul>
             <div class="suscribe-container">
                 <h3>SUSCRIBITE A NUESTRO NEWSLETTER</h3>

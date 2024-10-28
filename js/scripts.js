@@ -1,27 +1,44 @@
+/* ------------------------------ PARALLAX ------------------------------ */
+
+
 window.addEventListener('scroll', function() {
     const parallaxImages = document.querySelectorAll('.parallax-img');
 
     parallaxImages.forEach(function(img) {
-        const rect = img.getBoundingClientRect(); // Obtiene la posición relativa al viewport
-        const scrollPosition = window.pageYOffset; // Posición del scroll de la página
-        const imgTop = rect.top + scrollPosition; // Posición absoluta de la imagen en la página
+        const rect = img.getBoundingClientRect();
+        const scrollPosition = window.pageYOffset;
+        const imgTop = rect.top + scrollPosition;
 
-        // Calcula el movimiento parallax solo si la imagen está en el viewport
         if (scrollPosition + window.innerHeight > imgTop && scrollPosition < imgTop + rect.height) {
             img.style.transform = 'translateY(' + (scrollPosition - imgTop) * 0.2 + 'px)';
         }
     });
 });
 
-const sliderImg1 = document.querySelector('.slider-img1');
-const nonVisibleImg = document.querySelector('.slider-img1-nonvisible');
 
-// Mostrar u ocultar la imagen no visible al hacer click en slider-img1
-sliderImg1.addEventListener('click', function() {
-    nonVisibleImg.classList.toggle('show'); // Alterna entre mostrar y ocultar
+/* ------------------------------ NAVBAR ------------------------------ */
+
+const navbar = document.querySelector('.navbar');
+const barsButton = document.querySelector('.bars-button');
+const crossButton = document.querySelector('.cross-button');
+
+// Función para mostrar/ocultar el navbar
+const toggleNavbar = () => {
+    navbar.classList.toggle('visible');
+};
+
+// Evento de click en el botón de barras
+barsButton.addEventListener('click', (event) => {
+    toggleNavbar();
+    event.stopPropagation(); // Evitar que el click en el botón cierre el navbar
 });
 
-// Ocultar la imagen no visible al hacer click en la propia imagen no visible
-nonVisibleImg.addEventListener('click', function() {
-    nonVisibleImg.classList.remove('show'); // Se oculta al hacer click sobre la imagen grande
+// Evento de click en el botón de cierre
+crossButton.addEventListener('click', toggleNavbar);
+
+// Evento para cerrar el navbar al hacer click fuera de él
+document.addEventListener('click', (event) => {
+    if (navbar.classList.contains('visible') && !navbar.contains(event.target)) {
+        toggleNavbar();
+    }
 });

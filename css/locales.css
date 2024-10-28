@@ -1,0 +1,140 @@
+/* ---------- LOCALES ---------- */
+
+.locations-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.search-locationscards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30vw;
+    height: 60vh;
+    padding-right: 2rem;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    padding-left: .8rem;
+    flex-wrap: wrap;
+}
+
+.search-container input {
+    padding: .8rem;
+    width: auto;
+    margin: 0;
+    min-width: 300px;
+}
+
+.button-icon {
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.locationcards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: .8rem;
+    overflow-y: scroll;
+}
+
+.locationcards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin: .8rem 0;
+    padding: .8rem;
+    width: 100%;
+}
+
+.locationcards p {
+    font-size: 1.6rem;
+}
+
+.map-container {
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+.map {
+    height: 60vh;
+    width: 100%;
+}
+
+@media (max-width: 1500px) {
+    .search-container input {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 1100px) {
+    .search-container {
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .search-container input {
+        margin: 2rem 0 1rem;
+    }
+
+    .locations-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .search-locationscards-container {
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .search-locationscards-container {
+        width: 100%;
+    }
+
+    .locationcards-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .locationcards {
+        width: 300px;
+        margin: 1rem;
+    }
+
+    .map-container{
+        width: 90vw;
+    }
+}
+
+@media (max-width: 675px) {
+    .locationcards {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}

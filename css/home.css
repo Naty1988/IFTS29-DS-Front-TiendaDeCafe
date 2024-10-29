@@ -1,0 +1,506 @@
+
+/* ---------- SECCION 1 BANNER ---------- */ 
+
+/*  IMG 1  */ 
+
+.home-seccion1-banner {
+    background-image: url(../img/home/home-seccion1.jpg);    
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;   
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 5%;
+}
+
+.home-seccion1-banner-info {
+    padding: 0.3 rem;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+    color: white;
+    margin: auto;
+}
+
+.home-seccion1-banner-title1 {
+    font-size: 7rem;
+}
+
+.home-seccion1-banner-title2 {
+    font-size: 9rem;
+    font-weight: 500;    
+}
+
+.home-seccion1-banner-title3 {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+.home-seccion1-banner-btn {
+    font-size: 2rem;
+    background-color: transparent;
+    border: solid 3px white;
+    color: #ccc;
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+/*  IMG 2  */ 
+
+.home-seccion1-banner2 {
+    background-image: url(../img/home/sidebar_capsulas04_tablet_v2.jpg);    
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;   
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 5%;
+}
+
+/*  IMG 3  */ 
+
+.home-seccion1-banner3 {
+    background-image: url(../img/home/sidebar_tostadores02_tablet.jpg);    
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;   
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 5%;
+}
+
+/* ---------- SECCION 1 CARROUSEL ---------- */ 
+
+.container {
+    width: 100vw;
+    margin: 10px 10px;
+    height: 100vh;
+}
+.carrousel {
+    border: 2px solid #ccc;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+
+}
+.slider {
+    height: 100%;
+    display: flex;
+    width: auto;
+    transition: all 0.3s;
+    transform: translate(0%);
+}
+
+.slider section {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+}
+.arrow.left {
+    left: 10px;
+   rotate: 180;
+   transform: rotate(180deg)
+}
+
+.arrow.right {
+right: 10px;
+}
+
+.controls .arrow img {
+    width: 30px;
+}
+.controls ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform:  translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.controls ul li {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 50px;
+    margin: 10px;
+    background: #333;
+    cursor: pointer;
+}
+
+.controls ul li.selected {
+    background: transparent;
+}
+
+/* ---------- SECCION 2 CARDS ---------- */ 
+
+/*  TITLE  */ 
+
+.home-seccion2-div-title {
+    display: flex;
+    justify-content: center;
+}
+
+.home-seccion2-h1 {
+    color: #17171a;
+    font-size: 4rem;
+}
+
+.home-seccion2-div-line {
+    background-color: #c7a17a;
+    width: 120px;
+    height: 2.5px;
+    margin-bottom: 30px;
+}
+
+/*  CARDS  */ 
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card, .card-capsule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 15%;    
+}
+
+.card figure, .card-capsule figure {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-size: 100%;
+    background-position: center;
+    transition: background-size .6s ease;
+    padding: .8rem;
+}
+
+.card figure img {
+    width: 100%;
+    height: 100%;
+    transition: opacity .6s;
+}
+
+.cardBrasil figure:hover {
+    cursor: pointer;
+    background-image: url(../img/home/Productos_cafe_packs_BRASIL_frente_prueba-600x600.jpg); 
+    background-size: 120%;
+}
+
+.cardBarista figure:hover {
+    cursor: pointer;
+    background-image: url(../img/home/Productos_cafe_packs_BARISTA_frente_prueba-600x600.jpg); 
+    background-size: 120%;
+}
+
+.cardMinka figure:hover {
+    cursor: pointer;
+    background-image: url(../img/home/Productos_cafe_packs_minka_frente_prueba-600x600.jpg); 
+    background-size: 120%;
+}
+
+.cardColombia figure:hover {
+    cursor: pointer;
+    background-image: url(../img/home/Productos_cafe_packs_COLOMBIA_frente_prueba-600x600.jpg); 
+    background-size: 120%;
+}
+
+.cardScegliere figure:hover {
+    cursor: pointer;
+    background-image: url(../img/home/Productos_cafe_packs_SCEGLIERE2_frente_prueba-600x600.jpg); 
+    background-size: 120%;
+}
+
+.cardDescafeinado figure:hover {
+    cursor: pointer;
+    background-image: url(../img/home/Productos_cafe_packs_DESCAFEINADO_frente_prueba-600x600.jpg); 
+    background-size: 120%;
+}
+
+.card figure:hover img {
+    opacity: 0;
+}
+
+.card h4 {
+    margin: 1rem 0;
+}
+
+/*  CARDS RESPONSIVE */ 
+
+@media (max-width: 1160px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 780px) {
+    .card {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+/*  DOTS  */ 
+
+.home-dots {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.home-dots-1 {
+    height: 20px;
+    width: 20px;
+    margin: 1rem;   
+    border: solid 5px var(--black);
+    border-radius: 50%;
+    background-color:transparent;
+}
+
+/* ---------- SECCION 3 ---------- */ 
+
+.home-seccion-3 {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+}
+
+.home-seccion-3-container-left{
+    width: 40%;
+    height: 70%;
+    background-image:  url(../img/home/home3Left.jpg);
+    background-size: cover;
+}
+
+.home-seccion-3-container-left:hover {
+    cursor: pointer;
+    background-image: url(../img/home/home3Left.jpg); 
+    background-size: 120%;    
+}
+
+.home-seccion-3-container-rigth{
+    width: 40%;
+    height: 70%;
+    background-image:  url(../img/home/home3Rigth.jpg);
+    background-size: cover;
+}
+
+.home-seccion-3-container-rigth:hover {
+    cursor: pointer;
+    background-image: url(../img/home/home3Rigth.jpg); 
+    background-size: 120%;
+}
+
+.home-seccion-3-container-p {
+    background-color: var(--white);
+    padding: 0.5rem;
+    margin-top:30%;
+    margin-left: 5%;
+    font-size: 2rem;
+    width: 60%;
+    font-style: var(--fw-bolder);
+}
+
+.home-seccion-3-container-h3 {
+    padding: 0.5rem;
+    margin-top:0%;
+    margin-left: 5%;
+    font-size: 6rem;
+    color: var(--white);
+}
+
+.home-seccion-3-container-btn {
+    padding: 1rem;
+    margin-top:0%;
+    margin-left: 5%;
+    font-size: 1.5rem;
+    background-color: black;
+    color: #faf9f8;
+    padding: 0.5 rem;
+}
+
+section a {
+    text-decoration: none;
+    color: #17171a;
+}
+
+/* ---------- SECCION 5 ---------- */ 
+
+.home-seccion-5 {
+    background-image: url(../img/home/home5.jpg);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;      
+}
+
+.home-seccion-5-fondo{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.home-seccion-5-info {
+    text-align: center;  
+    padding: 0.3 rem;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;  
+    color: white;
+    margin: auto;
+}
+
+.home-seccion-5-title1 {
+    font-size: 5rem;
+    text-align: center;  
+}
+
+.home-seccion-5-title2 {
+    font-size: 8rem;
+    text-align: center; 
+    color: var(--dark-beige); 
+    font-weight: var(--fw-bolder);  
+}
+
+.home-seccion-5-title3 {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.home-seccion-5-btn {
+    font-size: 2rem;
+    background-color: transparent;
+    border: solid 3px white;
+    color: #ccc;
+    padding: 2rem 4rem 2rem 4rem;
+    align-items: center;
+    font-weight: var(--fw-bold);
+}
+
+/* ---------- SECCION 4 ---------- */ 
+
+.home-seccion-4-background {
+    background-color: #f5f5f5;
+    padding-top: 2rem;
+}
+
+.home-seccion-4-title {
+    color: #d0a35e;   
+    font-size: 2.5rem;
+    line-height: 20px;
+    font-weight: 200;
+}
+
+.home-seccion-4-div-title {
+    display: flex;
+    justify-content: center;
+}
+
+.home-seccion-4-back {
+    display: flex;
+    justify-content: space-evenly;   
+}
+
+.home-seccion-4-left {   
+    height: 100vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0rem 6rem 0rem 6rem;
+}
+
+.home-seccion-4-left-div {
+    text-align: right;
+    margin-bottom: 10%;
+}
+
+.home-seccion-4-left-div p {
+    font-size: 2rem;
+    color: #777;
+}
+
+.home-seccion-4-left-title {
+    color: #d0a35e;   
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+
+.home-seccion-4-middle {
+    background-image: url(../img/home/home4.jpg);    
+    width: 45vw;
+    padding: 1rem;
+    position: relative;
+    background-repeat: no-repeat; 
+}
+
+.home-seccion-4-rigth {   
+    height: 100vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0rem 6rem 0rem 6rem;
+}
+
+.home-seccion-4-rigth-div {
+    text-align: left;
+    margin-bottom: 10%;
+}
+
+.home-seccion-4-rigth-div p {
+    font-size: 2rem;
+    color: #777;
+}
+
+.home-seccion-4-h1 {
+    color: #17171a;
+    font-size: 5rem;
+}
+
+.home-seccion-4-div-line {
+    background-color: #c7a17a;
+    width: 200px;
+    height: 3px;
+    margin-bottom: 4rem;
+}

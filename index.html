@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Tienda de café</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="./js/home.js"></script>
 </head>
 <body>
     <header>
@@ -39,63 +41,137 @@
     </header>
 
     <main>
+        <!-- SECCION 1 BANNER -->
 
-        <section class="hero">
-        <div class="index_banner">
-            <div class = "index_banner_info">
-                <p class="index_banner_title1">Tu café preferido</p>
-                <p class="index_banner_title2">SIEMPRE CERCA</p>
-                <P class="index_banner_title3">Blends, varietales, cafés del mundo. </br> 
-                Encontrá tu tienda mas cercana y tentate con nuestros sabores</P>
-                <a href="./locales.html"><button class="index_banner_btn">ENCONTRANOS</button></a>
-                <p class="index_banner_p"></p>
-            </div>            
-        </div>
-        </section>
         <section>
+            <div class="container">    
+                <div class="carrousel"> 
+                    <div  class="slider">
+                        <section>
+                            <div class="home-seccion1-banner">
+                                <div class = "home-seccion1-banner-info">
+                                    <p class="home-seccion1-banner-title1">Tu café preferido</p>
+                                    <p class="home-seccion1-banner-title2">SIEMPRE CERCA</p>
+                                    <P class="home-seccion1-banner-title3">Blends, varietales, cafés del mundo. </br> 
+                                    Encontrá tu tienda mas cercana y tentate con nuestros sabores</P>
+                                    <a href="./locales.html"><button class="home-seccion1-banner-btn">ENCONTRANOS</button></a>    
+                                </div>            
+                            </div>
+                        </section>
+                        <section>
+                            <div class="home-seccion1-banner2">
+                                <div class = "home-seccion1-banner-info">
+                                    <p class="home-seccion1-banner-title1">Proba nuestras</p>
+                                    <p class="home-seccion1-banner-title2">CAPSULAS</p>
+                                    <P class="home-seccion1-banner-title3">100% aluminio compatibles con máquinas Nespresso*</p>                                   
+                                    <a href="./nuestrocafe.html"><button class="home-seccion1-banner-btn">DESCUBRILAS</button></a>    
+                                </div>            
+                            </div>
+                        </section>
+                        <section>
+                            <div class="home-seccion1-banner3">
+                                <div class = "home-seccion1-banner-info">
+                                    <p class="home-seccion1-banner-title1">Desde 2007</p>
+                                    <p class="home-seccion1-banner-title2">TOSTANDO TU CAFÉ</p>
+                                    <P class="home-seccion1-banner-title3">Años de experiencia cuidando cada paso del proceso.</p>                                     
+                                </div>            
+                            </div>
+                        </section>
+                       
+                    </div>
+                    <div class="controls">
+                        <span class="arrow left">
+                            <img src="./img//home/right-arrow.svg" alt="">
+                        </span>
+                        <span class="arrow right">
+                            <img src="./img//home/right-arrow.svg" alt="">
+                        </span>
+                        <ul>
+                            <li class="selected"></li>
+                            <li></li>
+                            <li></li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+  <!-- SECCION 2 CARDS -->
+
+        <section>
+            <div  class="home-seccion2">
+
+          
+    
         <div class="home_seccion2_title">
 
-            <div class="trabajaentdc-div-title">   
-                <h1 class="trabajaentdc-h1">NUSTROS PRODUCTOS</h1>				
+            <div class="home-seccion2-div-title">   
+                <h1 class="home-seccion2-h1">NUSTROS PRODUCTOS</h1>				
             </div>
 
-            <div class="trabajaentdc-div-title">
-                <div  class="trabajaentdc-div-line">                             
+            <div class="home-seccion2-div-title">
+                <div  class="home-seccion2-div-line">                             
                 </div>
             </div>       
 
         </div>
-        <div class="cards-container">
 
-            <div class="card cardHomeSize cardHoverBrasil">
+
+        <section class="cards-container">
+            <div class="card cardBrasil">
                 <figure>
-                    <img src="./img/home2CafeBrasil.png" alt="Paquete de café brasil">
+                    <img src="./img/home/Productos_cafe_packs_BRASIL_frente-600x600.jpg" alt="">
                 </figure>
                 <h4>Café Brasil</h4>
             </div>
             
-            <div class="card cardHomeSize cardHoverBarista">
+            <div class="card cardBarista">
                 <figure>
-                    <img src="./img/home2CafeBarista.png" alt="Paquete de café Barista">
+                    <img src="./img/home/Productos_cafe_packs_BARISTA_frente-600x600.jpg" alt="">
                 </figure>
                 <h4>Café Barista</h4>
             </div>
             
-            <div class="card cardHomeSize cardHoverMinka">
+            <div class="card cardMinka">
                 <figure>
-                    <img src="./img/home2CafeMinka.png" alt="Paquete de café Minka">
+                    <img src="./img/home/Productos_cafe_packs_MINKA_frente-600x600.jpg" alt="">
                 </figure>
                 <h4>Café Minka</h4>
             </div>
+            
+            <div class="card cardColombia">
+                <figure>
+                    <img src="./img/home/Productos_cafe_packs_COLOMBIA_frente-600x600.jpg" alt="">
+                </figure>
+                <h4>Café Colombia</h4>
+            </div>
+            
+            <div class="card cardScegliere">
+                <figure>
+                    <img src="./img/home/Productos_cafe_packs_SCEGLIERE_frente-600x600.jpg" alt="">
+                </figure>
+                <h4>Café Scegliere</h4>
+            </div>
+
+            <div class="card cardDescafeinado">
+                <figure>
+                    <img src="./img/home/Productos_cafe_packs_descaf_frente-600x600.jpg" alt="">
+                </figure>
+                <h4>Café Descafeinado</h4>
+            </div>
         </div>
+    </div>
+    
+    <div class="home-dots">
+        <div class="home-dots-1"></div>
+        <div class="home-dots-1"></div>
+        <div class="home-dots-1"></div>
+    </div>       
+    
+</section>       
 
-            <div class="home-dots">
-                <div class="home-dots-1"></div>
-                <div class="home-dots-1"></div>
-                <div class="home-dots-1"></div>
-            </div>          
-
-        </section>
+ <!-- SECCION 3 SECRETOS Y PLATOS-->
 
         <section class="home-seccion-3-back">
             <div class="home-seccion-3">
@@ -121,26 +197,30 @@
         </a>
         </section>
 
+        
+ <!-- SECCION 4 CUAL VAS A ELEGIR -->
+
 <section class="home-seccion-4-background">
 
     <div class="home_seccion2_title">
 
-        <div  class="trabajaentdc-div-title">
+        <div  class="home-seccion-4-div-title">
             <h4 class="home-seccion-4-title">NUESTRO CAFÉ</h4>
         </div>
 
-        <div class="trabajaentdc-div-title">   
+        <div class="home-seccion-4-div-title">   
             <h1 class="home-seccion-4-h1">¿CUÁL VAS A ELEGIR HOY?</h1>				
         </div>
 
-        <div class="trabajaentdc-div-title">
+        <div class="home-seccion-4-div-title">
             <div  class="home-seccion-4-div-line">                             
             </div>
         </div>       
 
     </div>
 
-    <div class="home-seccion-4-back">        
+    <div class="home-seccion-4-back">   
+
         <div  class="home-seccion-4-left">            
             <div class="home-seccion-4-left-div">
                 <h4 class="home-seccion-4-left-title">BARISTA</h4>
@@ -155,9 +235,10 @@
                 <p>Este blend nos regala un café de gran cuerpo, con un sabor especiado. Si sos amante del café intenso, te vas a enamorar de nuestro Minka.</p>
             </div>
         </div>
-        <div  class="home-seccion-4-middle">
-            medio img
+
+        <div  class="home-seccion-4-middle">            
         </div>
+
         <div  class="home-seccion-4-rigth">
             <div class="home-seccion-4-rigth-div">
                 <h4 class="home-seccion-4-left-title">COLOMBIA</h4>
@@ -170,26 +251,28 @@
             <div class="home-seccion-4-rigth-div">
                 <h4 class="home-seccion-4-left-title">BRASIL</h4>
                 <p>Un café de cuerpo suave, y baja acidez hacen de BRASIL el ideal para tus preparaciones de café filtrado.</p>
-            </div>
+            </div>            
         </div>
+
     </div>
 </section>
 
 
+ <!-- SECCION 5 -->
 
-        <section class="hero">
-            <div class="home-seccion-4">
-                <div class="home-seccion-4-fondo">
-                <div class = "home-seccion-4-info">
-                    <p class="home-seccion-4-title1">SIEMPRE HAY UN </P>
-                    <p class="home-seccion-4-title2">TIENDA CERCA TUYO</p>
-                    <P class="home-seccion-4-title3">Encontrá nuestra sucursal mas cercana</P>
-                    <button class="home-seccion-4-btn">INGRESAR</button>
-                    <p class="index_banner_p"></p>
+        <section>
+            <div class="home-seccion-5">
+                <div class="home-seccion-5-fondo">
+                <div class = "home-seccion-5-info">
+                    <p class="home-seccion-5-title1">SIEMPRE HAY UN </P>
+                    <p class="home-seccion-5-title2">TIENDA CERCA TUYO</p>
+                    <P class="home-seccion-5-title3">Encontrá nuestra sucursal mas cercana</P>
+                    <a href="./locales.html">
+                        <button class="home-seccion-5-btn">INGRESAR</button>
+                    </a>
                 </div>
-            </div>            
-            </div>
-            </section>
+            </div>           
+        </section>
 
 
     </main>
@@ -230,7 +313,7 @@
             <p>Todos los logos, productos, marcas y nombres aqui utilizados son propiedad registrada.</p>    
         </div>
     </footer>
-
+    <script src="./js/home.js"></script>
     <script src="./js/scripts.js"></script>
 </body>
 </html>

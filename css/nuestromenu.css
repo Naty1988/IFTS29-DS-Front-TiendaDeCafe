@@ -166,3 +166,17 @@
     width: 100%;
 }
 
+@media (max-width: 700px) {
+    .nuestromenu-left {
+        margin: 2rem 1rem 2rem 1rem;
+    }
+
+    .nuestromenu-right {
+        margin: 2rem 1rem 2rem 1rem;
+    }
+
+    .parallax-h2-container, .parallax-container div {
+        margin-left: 4rem ;
+        width: 80% ;
+    }
+}

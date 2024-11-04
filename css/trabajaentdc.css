@@ -43,6 +43,7 @@
     margin-right: 4%;  
     margin-left: 4%;
     justify-content: center;
+    align-items: center;
 }
 
 .trabajaentdc-form-div {  
@@ -54,7 +55,6 @@
     display: block;
     margin-bottom: 5px;
     color: #464646;
-    vertical-align: middle;
     font-weight: 400;
     font-size: 2rem;
 }

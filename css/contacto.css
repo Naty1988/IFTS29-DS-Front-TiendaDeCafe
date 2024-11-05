@@ -1,4 +1,12 @@
 /* ---------- CONTACTO ---------- */
+.trabajaentdc-main {
+    display: flex;
+    justify-content: center;
+}
+
+.trabajaentdc-p {
+    font-size: 1.6rem;
+}
 
 .contacto-main-div{
     display: flex;
@@ -33,6 +41,7 @@
     display: flex;  
     margin-right: 4%;  
     margin-left: 4%;
+    max-width: 1100px;
 }
 
 .contacto-div-title {
@@ -68,20 +77,17 @@
 }
 
 .contacto-form-line{ 
-    justify-content: center;
-    height: 100%;
-    background-color:  rgba(129, 129, 129, .2);
-    padding-bottom: 80%;
-    justify-content: center; 
-    height: 100%;
-    width: 3px;
-    margin: 2%;
+    height: 90%;
+    border-right: 2px solid rgba(129, 129, 129, .2);
+    text-align: center;
+    margin: 4rem;
 }
 
 .contacto-form-input {
     padding: 0 15px;
     max-width: 100%;
     width: 90%;
+    max-width: 380px;
     height: 42px;
     border: 2px solid rgba(129, 129, 129, .2);
     border-radius: 0;
@@ -93,6 +99,7 @@
 .contacto-form-textarea {
     max-width: 100%;
     width: 90%;
+    max-width: 380px;
     height: 190px;
     border: 2px solid rgba(251, 126, 126, 0.2);
     border-radius: 0;
@@ -122,4 +129,48 @@ display: block;
 
 .contacto-icons-div {
     margin: 5%;
+}
+
+@media (max-width: 740px) {
+    .contacto-form-container-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacto-form-line {
+        margin: 3rem 0 1rem;
+        padding: 0;
+        width: 100%;
+        border-bottom: 2px solid var(--light-cofee) ;
+    }
+
+    .contacto-form {
+        width: 100%;
+    }
+
+    .trabajaentdc-form-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .contacto-form-container-flex {
+        margin: 0;
+    }
+
+    .contacto-form-container {
+        margin: 0;
+    }
+    .contacto-form-input, .contacto-form-textarea {
+        width: 100%;
+    }
+
+    .contacto-form-line {
+        width: 80%;
+    }
 }

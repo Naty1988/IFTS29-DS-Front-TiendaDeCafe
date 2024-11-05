@@ -63,6 +63,7 @@ p {
     font-size: 2rem;
     margin: 0;
     font-weight: var(--fw-medium);
+    line-height: 1.4;
 }
 
 .p-bold {
@@ -108,13 +109,12 @@ label {
 
 .button-forms {
     height: auto;
-    margin: 0;
+    margin-top: 2rem;
     padding: .8rem;  
     color: white;
     background-color: var(--light-cofee);
     font-family: "Oswald", sans-serif;
     font-size: 1.4rem;
-    margin-bottom: 2%;  
     width: 10rem; 
 }
 
@@ -236,7 +236,7 @@ label {
 footer {
     display: flex;
     flex-direction: column;
-    background-color: var(--cofee);
+    background: linear-gradient(140deg, var(--dark-beige) 40%, var(--beige) 80%);
     width: 100%;
 }
 
@@ -267,6 +267,7 @@ footer {
     font-weight: var(--fw-light);
     color: var(--ligh-beige);
     text-decoration: none;    margin-top: 2rem;
+    text-shadow: 1px 1px 2px #000;
 
 }
 
@@ -323,6 +324,7 @@ footer {
     color: var(--light-cofee);
     font-family: "Oswald", sans-serif;
     font-size: 1.4rem;
+    cursor: pointer;
 }
 
 .social-icons-container {
@@ -339,6 +341,11 @@ footer {
     height: 40px;
     border-radius: 50%;
     margin: 1rem;
+    transition: all .4s;
+}
+
+.social-icon:hover {
+    box-shadow: 0px 0px 4px 1px var(--cofee);
 }
 
 .social-icon img {

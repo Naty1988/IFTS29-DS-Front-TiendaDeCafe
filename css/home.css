@@ -1,15 +1,14 @@
+/* ---------- SECCION 1 BANNER ---------- */
 
-/* ---------- SECCION 1 BANNER ---------- */ 
-
-/*  IMG 1  */ 
+/*  IMG 1  */
 
 .home-seccion1-banner {
-    background-image: url(../img/home/home-seccion1.jpg);    
+    background-image: url(../img/home/home-seccion1.jpg);
     height: 100vh;
     width: 100vw;
     position: relative;
     display: flex;
-    align-items: center;   
+    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding-left: 5%;
@@ -31,7 +30,7 @@
 
 .home-seccion1-banner-title2 {
     font-size: 9rem;
-    font-weight: 500;    
+    font-weight: 500;
 }
 
 .home-seccion1-banner-title3 {
@@ -47,46 +46,48 @@
     padding: 2rem 3rem 2rem 3rem;
 }
 
-/*  IMG 2  */ 
+/*  IMG 2  */
 
 .home-seccion1-banner2 {
-    background-image: url(../img/home/sidebar_capsulas04_tablet_v2.jpg);    
+    background-image: url(../img/home/sidebar_capsulas04_tablet_v2.jpg);
     height: 100vh;
     width: 100vw;
     position: relative;
     display: flex;
-    align-items: center;   
+    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding-left: 5%;
 }
 
-/*  IMG 3  */ 
+/*  IMG 3  */
 
 .home-seccion1-banner3 {
-    background-image: url(../img/home/sidebar_tostadores02_tablet.jpg);    
+    background-image: url(../img/home/sidebar_tostadores02_tablet.jpg);
     height: 100vh;
     width: 100vw;
     position: relative;
     display: flex;
-    align-items: center;   
+    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding-left: 5%;
 }
 
-/* ---------- SECCION 1 CARROUSEL ---------- */ 
+/* ---------- SECCION 1 CARROUSEL ---------- */
 
 .container {
     width: 100%;
     height: 100vh;
 }
+
 .carrousel {
     height: auto;
     position: relative;
     overflow: hidden;
 
 }
+
 .slider {
     height: 100%;
     display: flex;
@@ -109,31 +110,34 @@
     cursor: pointer;
 
 }
+
 .arrow.left {
     left: 10px;
-   rotate: 180;
-   transform: rotate(180deg);
-   z-index: 2;
+    rotate: 180;
+    transform: rotate(180deg);
+    z-index: 2;
 }
 
 .arrow.right {
-right: 10px;
-z-index: 2;
+    right: 10px;
+    z-index: 2;
 }
 
 .controls .arrow img {
     width: 30px;
 }
+
 .controls ul {
     position: absolute;
     bottom: 20px;
     left: 50%;
-    transform:  translate(-50%);
+    transform: translate(-50%);
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
 }
+
 .controls ul li {
     width: 20px;
     height: 20px;
@@ -148,9 +152,9 @@ z-index: 2;
     background: transparent;
 }
 
-/* ---------- SECCION 2 CARDS ---------- */ 
+/* ---------- SECCION 2 CARDS ---------- */
 
-/*  TITLE  */ 
+/*  TITLE  */
 
 .home-seccion2-div-title {
     display: flex;
@@ -169,7 +173,7 @@ z-index: 2;
     margin-bottom: 30px;
 }
 
-/*  CARDS  */ 
+/*  CARDS  */
 
 .cards-container {
     display: flex;
@@ -179,16 +183,18 @@ z-index: 2;
     flex-wrap: wrap;
 }
 
-.card, .card-capsule {
+.card,
+.card-capsule {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0;
-    width: 15%;    
+    width: 15%;
 }
 
-.card figure, .card-capsule figure {
+.card figure,
+.card-capsule figure {
     width: 100%;
     height: 100%;
     position: relative;
@@ -207,37 +213,37 @@ z-index: 2;
 
 .cardBrasil figure:hover {
     cursor: pointer;
-    background-image: url(../img/home/Productos_cafe_packs_BRASIL_frente_prueba-600x600.jpg); 
+    background-image: url(../img/home/Productos_cafe_packs_BRASIL_frente_prueba-600x600.jpg);
     background-size: 120%;
 }
 
 .cardBarista figure:hover {
     cursor: pointer;
-    background-image: url(../img/home/Productos_cafe_packs_BARISTA_frente_prueba-600x600.jpg); 
+    background-image: url(../img/home/Productos_cafe_packs_BARISTA_frente_prueba-600x600.jpg);
     background-size: 120%;
 }
 
 .cardMinka figure:hover {
     cursor: pointer;
-    background-image: url(../img/home/Productos_cafe_packs_minka_frente_prueba-600x600.jpg); 
+    background-image: url(../img/home/Productos_cafe_packs_minka_frente_prueba-600x600.jpg);
     background-size: 120%;
 }
 
 .cardColombia figure:hover {
     cursor: pointer;
-    background-image: url(../img/home/Productos_cafe_packs_COLOMBIA_frente_prueba-600x600.jpg); 
+    background-image: url(../img/home/Productos_cafe_packs_COLOMBIA_frente_prueba-600x600.jpg);
     background-size: 120%;
 }
 
 .cardScegliere figure:hover {
     cursor: pointer;
-    background-image: url(../img/home/Productos_cafe_packs_SCEGLIERE2_frente_prueba-600x600.jpg); 
+    background-image: url(../img/home/Productos_cafe_packs_SCEGLIERE2_frente_prueba-600x600.jpg);
     background-size: 120%;
 }
 
 .cardDescafeinado figure:hover {
     cursor: pointer;
-    background-image: url(../img/home/Productos_cafe_packs_DESCAFEINADO_frente_prueba-600x600.jpg); 
+    background-image: url(../img/home/Productos_cafe_packs_DESCAFEINADO_frente_prueba-600x600.jpg);
     background-size: 120%;
 }
 
@@ -249,7 +255,7 @@ z-index: 2;
     margin: 1rem 0;
 }
 
-/*  CARDS RESPONSIVE */ 
+/*  CARDS RESPONSIVE */
 
 @media (max-width: 1160px) {
     .card {
@@ -264,7 +270,7 @@ z-index: 2;
     }
 }
 
-/*  DOTS  */ 
+/*  DOTS  */
 
 .home-dots {
     display: flex;
@@ -276,13 +282,13 @@ z-index: 2;
 .home-dots-1 {
     height: 20px;
     width: 20px;
-    margin: 1rem;   
+    margin: 1rem;
     border: solid 5px var(--black);
     border-radius: 50%;
-    background-color:transparent;
+    background-color: transparent;
 }
 
-/* ---------- SECCION 3 ---------- */ 
+/* ---------- SECCION 3 ---------- */
 
 .home-seccion-3 {
     width: 100%;
@@ -293,36 +299,36 @@ z-index: 2;
     background-color: #FFFFFF;
 }
 
-.home-seccion-3-container-left{
+.home-seccion-3-container-left {
     width: 40%;
     height: 70%;
-    background-image:  url(../img/home/home3Left.jpg);
+    background-image: url(../img/home/home3Left.jpg);
     background-size: cover;
 }
 
 .home-seccion-3-container-left:hover {
     cursor: pointer;
-    background-image: url(../img/home/home3Left.jpg); 
-    background-size: 120%;    
+    background-image: url(../img/home/home3Left.jpg);
+    background-size: 120%;
 }
 
-.home-seccion-3-container-rigth{
+.home-seccion-3-container-rigth {
     width: 40%;
     height: 70%;
-    background-image:  url(../img/home/home3Rigth.jpg);
+    background-image: url(../img/home/home3Rigth.jpg);
     background-size: cover;
 }
 
 .home-seccion-3-container-rigth:hover {
     cursor: pointer;
-    background-image: url(../img/home/home3Rigth.jpg); 
+    background-image: url(../img/home/home3Rigth.jpg);
     background-size: 120%;
 }
 
 .home-seccion-3-container-p {
     background-color: var(--white);
     padding: 0.5rem;
-    margin-top:30%;
+    margin-top: 30%;
     margin-left: 5%;
     font-size: 2rem;
     width: 60%;
@@ -331,7 +337,7 @@ z-index: 2;
 
 .home-seccion-3-container-h3 {
     padding: 0.5rem;
-    margin-top:0%;
+    margin-top: 0%;
     margin-left: 5%;
     font-size: 6rem;
     color: var(--white);
@@ -339,7 +345,7 @@ z-index: 2;
 
 .home-seccion-3-container-btn {
     padding: 1rem;
-    margin-top:0%;
+    margin-top: 0%;
     margin-left: 5%;
     font-size: 1.5rem;
     background-color: black;
@@ -352,7 +358,7 @@ section a {
     color: #17171a;
 }
 
-/* ---------- SECCION 5 ---------- */ 
+/* ---------- SECCION 5 ---------- */
 
 .home-seccion-5 {
     background-image: url(../img/home/home5.jpg);
@@ -363,39 +369,39 @@ section a {
     align-items: center;
     justify-content: center;
     background-size: cover;
-    background-repeat: no-repeat;      
+    background-repeat: no-repeat;
 }
 
-.home-seccion-5-fondo{
+.home-seccion-5-fondo {
     height: 100%;
     width: 100%;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .home-seccion-5-info {
-    text-align: center;  
+    text-align: center;
     padding: 0.3 rem;
     position: absolute;
     width: 100%;
     max-width: 700px;
-    text-align: center;  
+    text-align: center;
     color: white;
     margin: auto;
 }
 
 .home-seccion-5-title1 {
     font-size: 5rem;
-    text-align: center;  
+    text-align: center;
 }
 
 .home-seccion-5-title2 {
     font-size: 8rem;
-    text-align: center; 
-    color: var(--dark-beige); 
-    font-weight: var(--fw-bolder);  
+    text-align: center;
+    color: var(--dark-beige);
+    font-weight: var(--fw-bolder);
 }
 
 .home-seccion-5-title3 {
@@ -415,7 +421,7 @@ section a {
     cursor: pointer;
 }
 
-/* ---------- SECCION 4 ---------- */ 
+/* ---------- SECCION 4 ---------- */
 
 .home-seccion-4-background {
     background-color: #f5f5f5;
@@ -423,7 +429,7 @@ section a {
 }
 
 .home-seccion-4-title {
-    color: #d0a35e;   
+    color: #d0a35e;
     font-size: 2.5rem;
     line-height: 20px;
     font-weight: 200;
@@ -436,12 +442,12 @@ section a {
 
 .home-seccion-4-back {
     display: flex;
-    justify-content: space-evenly;   
+    justify-content: space-evenly;
     overflow: hidden;
     margin-bottom: 4rem;
 }
 
-.home-seccion-4-left {   
+.home-seccion-4-left {
     height: 100%;
     width: 25vw;
     display: flex;
@@ -462,22 +468,22 @@ section a {
 }
 
 .home-seccion-4-left-title {
-    color: #d0a35e;   
+    color: #d0a35e;
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 5%;
 }
 
 .home-seccion-4-middle {
-    background-image: url(../img/home/home4.jpg);    
+    background-image: url(../img/home/home4.jpg);
     width: 45vw;
     padding: 1rem;
     position: relative;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center;
 }
 
-.home-seccion-4-rigth {   
+.home-seccion-4-rigth {
     height: 100%;
     width: 25vw;
     display: flex;
@@ -509,7 +515,7 @@ section a {
     margin-bottom: 4rem;
 }
 
-/* ---------- SECCION PARALLAX ---------- */ 
+/* ---------- SECCION PARALLAX ---------- */
 
 #parallax-info-container {
     width: 100%;
@@ -529,14 +535,15 @@ section a {
 
 #parallax-info-container h3 {
     width: 100%;
-    color: #d0a35e;  
+    color: #d0a35e;
 }
 
 @media (max-width: 700px) {
-    
-    .parallax-h2-container, .parallax-container div {
-        margin-left: 4rem ;
-        width: 80% ;
+
+    .parallax-h2-container,
+    .parallax-container div {
+        margin-left: 4rem;
+        width: 80%;
     }
 }
 
@@ -552,16 +559,19 @@ section a {
         width: 100%;
     }
 
-    .home-seccion-4-left, .home-seccion-4-rigth {
+    .home-seccion-4-left,
+    .home-seccion-4-rigth {
         width: 100%;
         text-align: center;
     }
 
-    .home-seccion-4-left-div, .home-seccion-4-rigth-div {
+    .home-seccion-4-left-div,
+    .home-seccion-4-rigth-div {
         text-align: center;
     }
 
-    .home-seccion-4-left-title, .home-seccion-4-rigth-title {
+    .home-seccion-4-left-title,
+    .home-seccion-4-rigth-title {
         margin-bottom: 1rem;
     }
 
@@ -569,5 +579,190 @@ section a {
         width: 100%;
         height: 50vh;
         margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .home-seccion1-banner-info {
+        padding: 2rem;
+    }
+
+    .home-seccion1-banner-title1 {
+        font-size: 4rem;
+    }
+
+    .home-seccion1-banner-title2 {
+        font-size: 5rem;
+        font-weight: 1000;
+    }
+
+    .home-seccion-3 {
+        flex-direction: column;
+    }
+
+    .home-seccion2-h1 {
+        font-size: 3.5rem;
+    }
+
+    .card {
+        width: 50vw;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .home-seccion-3-container-rigth {
+        width: 90vw;
+        height: 25vh;
+    }
+
+    .home-seccion-3-container-left {
+        width: 90vw;
+        height: 25vh;
+    }
+
+    .home-seccion-3-container-p {
+        display: none;
+    }
+
+    .home-seccion-3-container-h3 {
+        font-size: 4rem;
+    }
+
+    .home-seccion-4-h1 {
+        text-align: center;
+    }
+
+    .home-seccion-4-left-div,
+    .home-seccion-4-rigth-div {
+        text-align: left;
+        padding: 0 2rem;
+    }
+
+    .home-seccion-4-h1 {
+        font-size: 4rem;
+    }
+
+    .home-seccion-4-left-title {
+        font-size: 3rem;
+    }
+
+    .home-seccion-4-rigth-div {
+        padding: 0 2rem;
+    }
+
+    .home-seccion-4-middle {
+        background-size: cover;
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width: 425px) {
+
+    .home-seccion1-banner-info {
+        padding: 2rem;
+    }
+
+    .home-seccion1-banner-title1 {
+        font-size: 4rem;
+    }
+
+    .home-seccion1-banner-title2 {
+        font-size: 5rem;
+        font-weight: 1000;
+    }
+
+    .home-seccion-3 {
+        flex-direction: column;
+    }
+
+    .home-seccion2-h1 {
+        font-size: 3.5rem;
+    }
+
+    .card {
+        width: 50vw;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .home-seccion-3-container-rigth {
+        width: 90vw;
+        height: 25vh;
+    }
+
+    .home-seccion-3-container-left {
+        width: 90vw;
+        height: 25vh;
+    }
+
+    .home-seccion-3-container-p {
+        display: none;
+    }
+
+    .home-seccion-3-container-h3 {
+        font-size: 4rem;
+    }
+
+    .home-seccion-4-h1 {
+        text-align: center;
+    }
+
+    .home-seccion-4-left-div,
+    .home-seccion-4-rigth-div {
+        text-align: left;
+        padding: 0 2rem;
+    }
+
+    .home-seccion-4-h1 {
+        font-size: 4rem;
+    }
+
+    .home-seccion-4-left-title {
+        font-size: 3rem;
+    }
+
+    .home-seccion-4-rigth-div {
+        padding: 0 2rem;
+    }
+
+    .home-seccion-4-middle {
+        background-size: cover;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-seccion-3-container-h3 {
+        font-size: 3rem;
+    }
+    
+    .home-seccion-4-rigth-div {
+        text-align: left;    
+    }
+
+    .home-seccion-4-left-div {
+        text-align: left;    
+    }
+    
+    .card {
+        width: 30%;
+    }
+
+    .cardScegliere  {
+        display: none;
+    }
+
+    .cardColombia {
+        display: none;
+    }
+
+    .cardDescafeinado {
+        display: none;
     }
 }

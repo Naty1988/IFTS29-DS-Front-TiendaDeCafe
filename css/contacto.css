@@ -131,7 +131,12 @@ display: block;
     margin: 5%;
 }
 
+.button-forms {
+    border: none;
+}
+
 @media (max-width: 740px) {
+
     .contacto-form-container-flex {
         flex-direction: column;
         justify-content: center;
@@ -152,10 +157,17 @@ display: block;
     .trabajaentdc-form-div {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+        justify-content: center;        
+        width: 100%;        
+        margin: 2%;
+        align-items: flex-start;     
+        padding: 0 2rem 0 2rem;       
     }
+
+    .trabajaentdc-form-div label {
+      font-size: 1.5rem;
+     }      
+    
 }
 
 @media (max-width: 380px) {
@@ -172,5 +184,9 @@ display: block;
 
     .contacto-form-line {
         width: 80%;
+    }
+
+    .contacto-form-line {
+        visibility: hidden;
     }
 }

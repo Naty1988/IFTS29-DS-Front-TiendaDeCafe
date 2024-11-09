@@ -386,12 +386,12 @@ footer {
         justify-content: flex-start;
         width: 100%;
         height: 100%;
-        transform: translateX(-100%); /* Comienza fuera de la pantalla */
+        transform: translateX(-100%);
         transition: transform 0.3s ease;
     }
 
     .navbar.visible {
-        transform: translateX(0); /* Entra al viewport desde la izquierda */
+        transform: translateX(0);
     }
 
     #navbar-home-container {

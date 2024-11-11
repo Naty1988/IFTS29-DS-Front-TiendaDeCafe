@@ -546,19 +546,6 @@ section a {
     color: #d0a35e;
 }
 
-@media (max-width: 700px) {
-
-    .parallax-h2-container,
-    .parallax-container div {
-        margin-left: 4rem;
-        width: 80%;
-    }
-}
-
-.index {
-    z-index: 0;
-}
-
 @media (max-width: 890px) {
     .home-seccion-4-back {
         flex-direction: column;
@@ -590,79 +577,69 @@ section a {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
 
-    .home-seccion1-banner-title1 {
-        font-size: 4rem;
-    }
-
-    .home-seccion1-banner-title2 {
-        font-size: 5rem;
-        font-weight: 1000;
-    }
-
-    .home-seccion-3 {
-        flex-direction: column;
-    }
-
-    .home-seccion2-h1 {
-        font-size: 3.5rem;
-    }
-
-    .card {
-        width: 50vw;
-    }
-
-    .hide {
-        display: none;
-    }
-
-    .home-seccion-3-container-rigth {
-        width: 90vw;
-        height: 25vh;
-    }
-
-    .home-seccion-3-container-left {
-        width: 90vw;
-        height: 25vh;
-    }
-
-    .home-seccion-3-container-p {
-        display: none;
+    .home-seccion1-banner-info {
+        padding: 2rem 6rem;
+        margin: 0;
     }
 
     .home-seccion-3-container-h3 {
-        font-size: 4rem;
-    }
-
-    .home-seccion-4-h1 {
-        text-align: center;
-    }
-
-    .home-seccion-4-left-div,
-    .home-seccion-4-rigth-div {
-        text-align: left;
-        padding: 0 2rem;
-    }
-
-    .home-seccion-4-h1 {
-        font-size: 4rem;
-    }
-
-    .home-seccion-4-left-title {
         font-size: 3rem;
     }
-
+    
     .home-seccion-4-rigth-div {
-        padding: 0 2rem;
+        text-align: left;    
     }
 
-    .home-seccion-4-middle {
-        background-size: cover;
-        padding: 1rem;
+    .home-seccion-4-left-div {
+        text-align: left;    
+    }
+    
+    .card {
+        width: 30%;
+    }
+
+    .cardScegliere  {
+        display: none;
+    }
+
+    .cardColombia {
+        display: none;
+    }
+
+    .cardDescafeinado {
+        display: none;
     }
 }
 
+@media (max-width: 700px) {
+
+    .parallax-h2-container,
+    .parallax-container div {
+        margin-left: 4rem;
+        width: 80%;
+    }
+}
+
+@media (max-width: 468px) {
+
+    .home-seccion1-banner2 {
+        padding: 0;
+    }
+
+    .home-seccion1-banner-info {
+        padding: 2rem;
+    }
+    .home-seccion1-banner-info__h2 {
+        margin-bottom: 12rem;
+    }
+}
+
+
+.index {
+    z-index: 0;
+}
 
 @media (max-width: 425px) {
 
@@ -737,38 +714,75 @@ section a {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 375px) {
 
-    .home-seccion1-banner-info {
-        padding: 2rem 6rem;
-        margin: 0;
+    .home-seccion1-banner-title1 {
+        font-size: 4rem;
+    }
+
+    .home-seccion1-banner-title2 {
+        font-size: 5rem;
+        font-weight: 1000;
+    }
+
+    .home-seccion-3 {
+        flex-direction: column;
+    }
+
+    .home-seccion2-h1 {
+        font-size: 3.5rem;
+    }
+
+    .card {
+        width: 50vw;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .home-seccion-3-container-rigth {
+        width: 90vw;
+        height: 25vh;
+    }
+
+    .home-seccion-3-container-left {
+        width: 90vw;
+        height: 25vh;
+    }
+
+    .home-seccion-3-container-p {
+        display: none;
     }
 
     .home-seccion-3-container-h3 {
+        font-size: 4rem;
+    }
+
+    .home-seccion-4-h1 {
+        text-align: center;
+    }
+
+    .home-seccion-4-left-div,
+    .home-seccion-4-rigth-div {
+        text-align: left;
+        padding: 0 2rem;
+    }
+
+    .home-seccion-4-h1 {
+        font-size: 4rem;
+    }
+
+    .home-seccion-4-left-title {
         font-size: 3rem;
     }
-    
+
     .home-seccion-4-rigth-div {
-        text-align: left;    
+        padding: 0 2rem;
     }
 
-    .home-seccion-4-left-div {
-        text-align: left;    
-    }
-    
-    .card {
-        width: 30%;
-    }
-
-    .cardScegliere  {
-        display: none;
-    }
-
-    .cardColombia {
-        display: none;
-    }
-
-    .cardDescafeinado {
-        display: none;
+    .home-seccion-4-middle {
+        background-size: cover;
+        padding: 1rem;
     }
 }

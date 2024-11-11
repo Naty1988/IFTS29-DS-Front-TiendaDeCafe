@@ -124,8 +124,6 @@
 
 .parallax-h2-container {
     position: absolute;
-    margin-left: 10rem;
-    width: 40%;
 }
 
 .parallax-h2-container h2 {
@@ -192,13 +190,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    width: 90%;
+    width: 100%;
+    margin-bottom: 4rem;
     border-bottom: 1px solid var(--gray);
 }
 
 .paso-img-container {
     width: 40%;
-    margin: 4rem;
+    margin: 0 4rem 0 0;
 }
 
 .paso-img {
@@ -207,8 +206,7 @@
 }
 
 .paso-explanation {
-    width: 40%;
-    margin: 3rem;
+    width: 50%;
 }
 
 .paso-explanation h3 {
@@ -256,17 +254,16 @@
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        margin: 0;
     }
     .paso-img-container {
-        width: 60%;
+        width: 600px;
         margin: 4rem;
-        max-width: 800px;
     }
 
     .paso-explanation {
-        width: 60%;
+        width: 600px;
         margin: 0;
-        max-width: 800px;
     }
 
     .paso-img-container {
@@ -283,6 +280,19 @@
 @media (max-width: 650px) {
     .main-tutoriales {
         padding: 0;
+    }
+
+    .paso {
+        width: 100%;
+    }
+
+    .paso-explanation {
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+    .paso-img-container {
+        width: 100%;
     }
 
     .tutorials-container {

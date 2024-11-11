@@ -11,6 +11,7 @@
     align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: right;
 }
 
 .home-seccion1-banner-info {
@@ -555,7 +556,7 @@ section a {
 }
 
 .index {
-    z-index: 1;
+    z-index: 0;
 }
 
 @media (max-width: 890px) {
@@ -590,10 +591,6 @@ section a {
 }
 
 @media (max-width: 375px) {
-
-    .home-seccion1-banner-info {
-        padding: 2rem;
-    }
 
     .home-seccion1-banner-title1 {
         font-size: 4rem;
@@ -669,10 +666,6 @@ section a {
 
 @media (max-width: 425px) {
 
-    .home-seccion1-banner-info {
-        padding: 2rem;
-    }
-
     .home-seccion1-banner-title1 {
         font-size: 4rem;
     }
@@ -745,6 +738,12 @@ section a {
 }
 
 @media (max-width: 768px) {
+
+    .home-seccion1-banner-info {
+        padding: 2rem 6rem;
+        margin: 0;
+    }
+
     .home-seccion-3-container-h3 {
         font-size: 3rem;
     }
